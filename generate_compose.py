@@ -66,8 +66,8 @@ services:
     environment:{green_env}
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:{green_port}/.well-known/agent-card.json"]
-      interval: 5s
-      timeout: 3s
+      interval: 10s
+      timeout: 5s
       retries: 10
       start_period: 30s
     depends_on:{green_depends}
@@ -100,8 +100,8 @@ PARTICIPANT_TEMPLATE = """  {name}:
     environment:{env}
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:{port}/.well-known/agent-card.json"]
-      interval: 5s
-      timeout: 3s
+      interval: 10s
+      timeout: 5s
       retries: 10
       start_period: 30s
     networks:
