@@ -14,4 +14,4 @@ env = {}
 
 [config]
 num_conversations_rounds = 5
-num_rounds = 10
+num_rounds = 20
