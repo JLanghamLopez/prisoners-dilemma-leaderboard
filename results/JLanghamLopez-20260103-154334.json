@@ -1,0 +1,41 @@
+{
+  "participants": {
+    "prisoner_a": "019b802a-0f19-7080-ae02-5cb1523279ea",
+    "prisoner_b": "019b8027-ed83-7890-9b57-9b177418f255"
+  },
+  "results": [
+    {
+      "winner": "prisoner_b",
+      "scores": {
+        "prisoner_a": 30,
+        "prisoner_b": 0
+      },
+      "choices": {
+        "prisoner_a": [
+          "silence",
+          "silence",
+          "silence",
+          "silence",
+          "silence",
+          "silence",
+          "silence",
+          "silence",
+          "silence",
+          "silence"
+        ],
+        "prisoner_b": [
+          "testify",
+          "testify",
+          "testify",
+          "testify",
+          "testify",
+          "testify",
+          "testify",
+          "testify",
+          "testify",
+          "testify"
+        ]
+      }
+    }
+  ]
+}
