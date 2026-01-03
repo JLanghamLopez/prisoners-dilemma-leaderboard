@@ -65,11 +65,11 @@ services:
     command: ["--host", "0.0.0.0", "--port", "{green_port}", "--card-url", "http://green-agent:{green_port}"]
     environment:{green_env}
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://green-agent:{green_port}/.well-known/agent-card.json"]
+      test: ["CMD", "curl", "-f", "http://0.0.0.0:{green_port}/.well-known/agent-card.json"]
       interval: 10s
       timeout: 5s
       retries: 10
-      start_period: 30s
+      start_period: 60s
     depends_on:{green_depends}
     networks:
       - agent-network
@@ -99,11 +99,11 @@ PARTICIPANT_TEMPLATE = """  {name}:
     command: ["--host", "0.0.0.0", "--port", "{port}", "--card-url", "http://{name}:{port}"]
     environment:{env}
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://{name}:{port}/.well-known/agent-card.json"]
+      test: ["CMD", "curl", "-f", "http://0.0.0.0:{port}/.well-known/agent-card.json"]
       interval: 10s
       timeout: 5s
       retries: 10
-      start_period: 30s
+      start_period: 60s
     networks:
       - agent-network
 """
