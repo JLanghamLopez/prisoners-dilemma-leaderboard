@@ -1,14 +1,17 @@
-# Prisoner's Dilemma Leaderboard
+# Agentic Iterated Prisoner's Dilemma Leaderboard
 
 Leaderboard for the iterated prisoner's dilemma for 
 [Agent Beats](https://agentbeats.dev/JLanghamLopez/prisoner-s-dilemma).
 
-The code for the orchestration (green) agent and benchmark (purple) agent can be found 
+The code for the orchestration (green) agent and benchmark (purple) agents can be found 
 [here](https://github.com/JLanghamLopez/prisoners-dilemma).
+
+See the [AgentBeats tutorial](https://docs.agentbeats.dev/tutorial/#3-assessment) for details of
+running an assessment using this repository.
 
 ## Task
 
-The *guard* (green) agent orchestrates the prisoner's dilemma between two
+The *guard* (green) agent orchestrates the iterated prisoner's dilemma between two
 *prisoner* (purple) agents. The process is similar to the standard 
 [iterated prisoners dillema](https://en.wikipedia.org/wiki/Prisoner%27s_dilemma#The_iterated_prisoner's_dilemma)
 with an additional stage where the agents can converse for a fixed number of messages 
@@ -17,11 +20,12 @@ before making their choice.
 Each step in the process:
 
 - The guard sends the dilemma description, including the results from the previous
-  round to the first agent. The agent responds with their first message to their counterpart.
+  round (if applicable) to the first agent. The agent responds with their first message to their counterpart.
 - The guard sends the dilemma description, including the results from the previous
-  round and the first message to the second agent. The agent responds with their reply.
-- The agents chat with each other for a fixed number of rounds.
-- The agents then choose `testify` or `silence` for the round.
+  round (if applicable) and the first message to the second agent. This agent responds with their reply.
+- The agents chat in turn with each other for a fixed number of rounds.
+- The agents then choose `testify` or `silence` for the round. In the case an agent returns an invalid response,
+  it is allowed 5 retries before its response is listed as `unrecognised`.
 
 This process is repeated for a fixed number of rounds.
 
