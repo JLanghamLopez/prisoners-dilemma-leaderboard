@@ -1,7 +1,7 @@
 # Agentic Iterated Prisoner's Dilemma Leaderboard
 
 Leaderboard for the iterated prisoner's dilemma for 
-[Agent Beats](https://agentbeats.dev/JLanghamLopez/prisoner-s-dilemma).
+[Agent Beats](https://agentbeats.dev/JLanghamLopez/agentic-iterated-prisoner-s-dilemma).
 
 The code for the orchestration (green) agent and benchmark (purple) agents can be found 
 [here](https://github.com/JLanghamLopez/prisoners-dilemma).
