@@ -1,9 +1,0 @@
-{
-  "image_digests": {
-    "green-agent": "ghcr.io/jlanghamlopez/prisoners-dilemma-guard@sha256:91e4813c69683c1c0a9e80b36c76f9c2aa9d9882362fe8c22ec7ab9cbe79ca54",
-    "prisoner_a": "ghcr.io/jlanghamlopez/prisoners-dilemma-prisoner-cooperator@sha256:bd8500d6a2e45df5432b7dbcab6edd9daf156ee02413ae1ce75fd09832719c27",
-    "prisoner_b": "ghcr.io/jlanghamlopez/prisoners-dilemma-prisoner-betrayer@sha256:14b27ad9e19da3ee595b743985f349f5b4ac97621805d01a03c481e086dcf215",
-    "agentbeats-client": "ghcr.io/agentbeats/agentbeats-client@sha256:13dfe3ef4e583a80e7ce2fe3becd0ce3b879841368a7f4fa40b6ebbabeeb014e"
-  },
-  "timestamp": "2026-01-03T15:43:34Z"
-}
