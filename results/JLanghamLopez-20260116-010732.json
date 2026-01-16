@@ -1,0 +1,31 @@
+{
+  "participants": {
+    "prisoner_a": "019b802a-0f19-7080-ae02-5cb1523279ea",
+    "prisoner_b": "019b802a-0f19-7080-ae02-5cb1523279ea"
+  },
+  "results": [
+    {
+      "winner": "draw",
+      "scores": {
+        "prisoner_a": 4,
+        "prisoner_b": 4
+      },
+      "choices": {
+        "prisoner_a": [
+          "silence",
+          "silence",
+          "silence",
+          "silence"
+        ],
+        "prisoner_b": [
+          "silence",
+          "silence",
+          "silence",
+          "silence"
+        ]
+      },
+      "n_conversation": 3,
+      "n_rounds": 4
+    }
+  ]
+}
